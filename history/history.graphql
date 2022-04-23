@@ -1,0 +1,9 @@
+type Query {
+  historyByUserId: history
+}
+
+type history {
+  id: ID!
+  userId: Int
+  createdAt: String!
+}

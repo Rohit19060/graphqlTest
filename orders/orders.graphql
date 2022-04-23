@@ -1,0 +1,15 @@
+type Query {
+  orders: [Order],
+  orderById(id: ID!): Order,
+  orderByUserId(userId: ID!): [Order],
+}
+
+type Order {
+  id: ID!
+  purchaseDate: String!
+  consentDate: String!
+  awaitingApproval: String!
+  userId: ID!
+  kitId: ID!
+  items: [Kit]
+}

@@ -1,0 +1,12 @@
+type Query {
+  tests: [Test]
+  testById(id: ID!): Test
+}
+
+type Test {
+  id: ID!
+  name: String!
+  status: String!
+  kit: [Kit]
+  createdAt: String!
+}

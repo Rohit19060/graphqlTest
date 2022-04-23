@@ -1,0 +1,10 @@
+type Query {
+  LabOrderByUserId(id: ID!): People
+}
+
+type LabOrders {
+  id: ID!
+  userId: ID!
+  status: String!
+  createdAt: String!
+}

@@ -1,0 +1,13 @@
+type Query {
+  kits: [Kit]
+  kitsById: Kit
+}
+
+type Kit {
+  id: ID!
+  shipped: Boolean!
+  arrivalDate: String!
+  shippedToLab: Boolean!
+  registrationNumber: String!
+  createdAt: String!
+}

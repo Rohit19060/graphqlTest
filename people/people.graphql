@@ -1,0 +1,20 @@
+type Query {
+  people: [People]
+  peopleById(id: ID!): People
+}
+
+type People {
+  id: ID!
+  name: String!
+  age: Int!
+  partner: People
+  access:Boolean!
+  state: String!
+  phone: String!
+  email: String!
+  address: String!
+  city: String!
+  zip: String!
+  country: String!
+  createdAt: String!
+}
